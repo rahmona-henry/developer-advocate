@@ -58,7 +58,7 @@ app.post('/', function (req, res) {
     "context": {
       "hutk":  cookie, // include this parameter and set it to the hubspotutk cookie value to enable cookie tracking on your submission
       // "pageUri": pageURL,
-      "pageName": title
+      "pageName": "title"
     },
 
     "skipValidation": true
