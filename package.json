@@ -18,6 +18,9 @@
   },
   "homepage": "https://github.com/rahmona-henry/developer-advocate#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "body-parser": "^1.19.0",
+    "browserify": "^16.5.0",
+    "express": "^4.17.1",
+    "watchify": "^3.11.1"
   }
 }
