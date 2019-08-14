@@ -16,6 +16,8 @@
           <label for="Email">Email Address</label><br>
           <input type="email" name="email" placeholder="Email Address">
           <input type="hidden" id="cookie" name="cookie" value="">
+          <input type="hidden" id="cookie" name="cookie" value="">
+          <input type="hidden" id="cookie" name="cookie" value="">
           <br><br>
 
           <input type="submit" value="Submit">
@@ -39,6 +41,12 @@
     var cookie = getCookie ('hubspotutk');
     console.log(cookie);
     document.getElementById("cookie").value=cookie;
+
+    var pageTitle = document.title;
+    document.getElementById("title").value=title;
+    var pageURL = document.URL;
+    document.getElementById("url").value=url;
+
 
   </script>
 
