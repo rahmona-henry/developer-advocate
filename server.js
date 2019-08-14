@@ -61,7 +61,7 @@ app.post('/', function (req, res) {
       "pageName": "Developer Advocate"
     },
 
-    "skipValidation": false
+    "skipValidation": true
   }
 
   var final_data = JSON.stringify(data)
