@@ -52,9 +52,15 @@
     document.getElementById("pageURL").value=pageURL;
    console.log(pageURL);
 
-
+   var _hsq = window._hsq = window._hsq || [];
+   _hsq.push(["identify",{
+       email: getParameterByName("email"),
+       favorite_color: 'orange'
+   }]);
 
   </script>
+
+
 
 
   <!-- Start of HubSpot Embed Code -->
