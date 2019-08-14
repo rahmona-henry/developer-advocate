@@ -42,9 +42,16 @@
     console.log(cookie);
     document.getElementById("cookie").value=cookie;
 
-    var pageTitle = document.title;
-    document.getElementById("title").value=title;
-    console.log(title);
+    // var pageTitle = document.title;
+    // document.getElementById("title").value=title;
+
+    var pageTitle = document.getElementsByTagName("title")[0];
+    alert(x.innerHTML)
+
+    console.log(pageTitle.innerHTML);
+
+
+
     var pageURL = document.URL;
     document.getElementById("url").value=url;
 
