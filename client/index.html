@@ -50,8 +50,8 @@
 
 
 
-    var pageURL = document.URL;
-    document.getElementById("url").value=url;
+    var pageURL = document.getElementsByTagName("url")[0];
+    console.log(pageURL.innerHTML);
 
 
   </script>
