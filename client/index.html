@@ -17,7 +17,7 @@
           <input type="email" name="email" placeholder="Email Address">
           <input type="hidden" id="cookie" name="cookie" value="">
           <input type="hidden" id="title" name="title" value="">
-          <!-- <input type="hidden" id="pageURL" name="pageURL" value="pageURL"> -->
+          <input type="hidden" id="pageURL" name="pageURL" value="">
           <br><br>
 
           <input type="submit" value="Submit">
@@ -49,12 +49,9 @@
     // var pageTitle = document.getElementsByTagName("title")[0];
     // console.log(pageTitle.innerHTML);
 
-
-
-
-
-    // var pageURL = window.location.href;
-    //     console.log(pageURL);
+    var pageURL = window.location.href;
+    console.log(pageURL);
+    document.getElementById("pageURL").value=pageURL;
 
     // var pageURL = document.getElementsByTagName("url")[0];
     // console.log(pageURL.innerHTML);
