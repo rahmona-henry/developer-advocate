@@ -20,6 +20,10 @@ app.use(express.json({
   verify: undefined
 }))
 
+app.get('/', function (req,res) {
+  res.send(index.html)
+})
+
 //POST Requests//
 app.post('/', function (req, res) {
 
