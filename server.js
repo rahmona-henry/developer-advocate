@@ -3,7 +3,7 @@ const app = express()
 const bodyParser = require('body-parser')
 const XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
 // const xhr = new XMLHttpRequest();
-app.set('port', (process.env.PORT || 4000));
+// app.set('port', (process.env.PORT || 4000));
 
 
 app.use(express.static('client'))
@@ -96,6 +96,7 @@ app.post('/', function (req, res) {
 })
 
 
-const port = process.env.PORT || 4000
+// const port = process.env.PORT || 4000
+.listen(process.env.PORT || 5000)
 app.listen(port, function(){
 console.log('We have lift off on port ' + port))
