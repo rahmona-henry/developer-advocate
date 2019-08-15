@@ -34,8 +34,8 @@ app.post('/', function (req, res) {
   const pageURL =req.body.pageURL
   const submissionTime = new Date().getTime(); //Get time in milliseconds to record submission
   console.log("The value of a is " + req.body)
-  console.log(req.body)
-  res.status(400).send({message : "You are missing vital credentials"})
+  // console.log(req.body)
+  // res.status(400).send({message : "You are missing vital credentials"})
       });
 
 
