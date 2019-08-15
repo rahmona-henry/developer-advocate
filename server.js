@@ -92,30 +92,8 @@ app.post('/', function (req, res) {
 
 
   // Sends the request
-  xhr.send(final_data)
-
-
-  var url = 'https://devadvocate.herokuapp.com'; //A local page
-
-  function load(url, callback) {
-  var xhr = new XMLHttpRequest();
-
-  xhr.onreadystatechange = function() {
-  if (xhr.readyState === 4) {
-    callback(xhr.response);
-
-    var data = xhr.responseText;
-    var jsonResponse = JSON.parse(data);
-    console.log(jsonResponse["Data"]);
-  }
-  }
-
-  xhr.open('GET', url, true);
-  xhr.send('');
-
-  }
-
-
+  // xhr.send(final_data)
+   xhr.send(null);
 
   res.send('Thank you for submitted the form!')
 
