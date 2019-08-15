@@ -38,9 +38,15 @@
         }
         return "";
     }
+
+
+    var cookieAccept = document.getElementById("hs-eu-confirmation-button");
+    cookieAccept.addEventListener("click", function(){
     var cookie = getCookie ('hubspotutk');
-    document.getElementById("cookie").value=cookie;
-    console.log(cookie);
+   document.getElementById("cookie").value=cookie;
+   console.log(cookie);
+
+});
 
     var title = document.title;
     document.getElementById("title").value=title;
