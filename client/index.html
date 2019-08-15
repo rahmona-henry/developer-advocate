@@ -39,19 +39,29 @@
         return "";
     }
 
-window.onload=function(){
-   setTimeout(function(){
-     console.log("add event listener");
-             var cookieAccept = document.getElementById("hs-eu-confirmation-button");
-             cookieAccept.addEventListener("click", function(){
-             var cookie = getCookie ('hubspotutk');
-            document.getElementById("cookie").value=cookie;
-            console.log(cookie);
-       });
-    }, 0500);
+// window.onload=function(){
+//    setTimeout(function(){
+//      console.log("add event listener");
+//              var cookieAccept = document.getElementById("hs-eu-confirmation-button");
+//              cookieAccept.addEventListener("click", function(){
+//              var cookie = getCookie ('hubspotutk');
+//             document.getElementById("cookie").value=cookie;
+//             console.log(cookie);
+//        });
+//     }, 0500);
+//
+//
+// }
 
-  
-}
+
+document.addEventListener('click', function(e) {
+          if (e.target && e.target.id == 'hs-eu-confirmation-button') {
+              console.log("Accepted Cookies");
+              var cookie = getCookie ('hubspotutk');
+             document.getElementById("cookie").value=cookie;
+          }
+      });
+
 
 
 
