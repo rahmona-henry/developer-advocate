@@ -33,10 +33,9 @@ app.post('/', function (req, res) {
   const cookie =req.body.cookie
   const pageURL =req.body.pageURL
   const submissionTime = new Date().getTime(); //Get time in milliseconds to record submission
+  console.log("The value of a is " + req.body)
   console.log(req.body)
-
-  app.post('/bad-request', (req, res) => {
-              res.status(400).send({message : "You are missing vital credentials"})
+  res.status(400).send({message : "You are missing vital credentials"})
       });
 
 
@@ -84,7 +83,7 @@ app.post('/', function (req, res) {
           if(xhr.readyState == 4 && xhr.status == 200) {
               console.log(xhr.responseText); // Returns a 200 response if the submission is successful.
           } else if (xhr.readyState == 4 && xhr.status == 400){
-              console.log(xhr.responseText);// Returns a 400 error the submission is rejected.
+              console.log(xhr.responseText); // Returns a 400 error the submission is rejected.
           } else if (xhr.readyState == 4 && xhr.status == 403){
               console.log(xhr.responseText); // Returns a 403 error if the portal isn't allowed to post submissions.
           } else if (xhr.readyState == 4 && xhr.status == 404){
