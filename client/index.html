@@ -44,7 +44,7 @@
 
     var title = document.title;
     document.getElementById("title").value=title;
-    console.log(title)
+    // console.log(title)
     var pageTitle = document.getElementsByTagName("title")[0];
     console.log(pageTitle.innerHTML);
 
@@ -61,8 +61,9 @@
 
    var _hsq = window._hsq = window._hsq || [];
    _hsq.push(["identify",{
-       email: getParameterByName("email"),
-       favorite_color: 'orange'
+       email: getParameterByName("email")
+       console.log(email)
+
    }]);
 
    document.getElementById("submit").onclick = function() {
