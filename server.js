@@ -32,7 +32,7 @@ app.post('/', function (req, res) {
   const email = req.body.email
   const cookie =req.body.cookie
   const pageURL =req.body.pageURL
-
+  const submissionTime = new Date().getTime(); //Get time in milliseconds to record submission
   console.log(req.body)
 
 
@@ -45,7 +45,7 @@ app.post('/', function (req, res) {
 
   // Example request JSON:
   var data = {
-    "submittedAt": "1565831714099",
+    "submittedAt": submissionTime,
     "fields": [
       {
         "name": "email",
