@@ -41,7 +41,7 @@
        </div>
      </div>
 
-  
+
      <!--Form Section-->
      <section>
        <div class="container">
@@ -97,7 +97,6 @@ document.addEventListener('click', function(e) {
           }
       });
 
-
     var title = document.title;
     document.getElementById("title").value=title;
     // console.log(title)
@@ -110,7 +109,6 @@ document.addEventListener('click', function(e) {
 </script>
 
 <script>
-
    function getParameterByName(name) {
        var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
        return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
@@ -119,14 +117,12 @@ document.addEventListener('click', function(e) {
    var _hsq = window._hsq = window._hsq || [];
    _hsq.push(["identify",{
         email: getParameterByName("email")
-
    }]);
 
    document.getElementById("submit").onclick = function() {
     _hsq.push(["trackEvent", {
         id: "000007233508",
         value: 0,
-
     }]);
 };
 </script>
