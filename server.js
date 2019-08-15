@@ -95,28 +95,8 @@ app.post('/', function (req, res) {
   xhr.send(final_data)
 
 
-  function createCORSRequest(method, url){
-    var xhr = new XMLHttpRequest();
-    if ("withCredentials" in xhr){
-      xhr.open(method, url, true);
-    } else if (typeof XDomainRequest != "undefined"){
-      xhr = new XDomainRequest();
-      xhr.open(method, url);
-    } else {
-      xhr = null;
-    }
-    xhr.send();
-    return xhr;
-  }
 
-  var url = 'http://www.bea.gov/api/data/?&XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX;
-  var xhr = createCORSRequest('GET', url);
 
-  document.getElementById("myDiv").innerHTML=xhr.responseText;
-
-  function myFunction() {
-      alert(document.getElementById(xhr.responseText);
-  }
 
 
   res.send('Thank you for submitted the form!')
