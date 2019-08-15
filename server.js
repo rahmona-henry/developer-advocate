@@ -92,14 +92,26 @@ app.post('/', function (req, res) {
 
 
   // Sends the request
-
   xhr.send(final_data)
 
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 400) {
+      document.getElementById("submit").innerHTML =
+      this.getAllResponseHeaders();
+    }
+  };
+  xhttp.open("GET", "ajax_info.txt", true);
+  xhttp.send();
 
 
-  res.send('form submitted')
+
+  res.send('Thank you for submitted the form!')
 
 })
+
+
+
 
 
 // const port = process.env.PORT || 4000
