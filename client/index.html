@@ -71,9 +71,7 @@
      </div>
      </section>
 
-     <div id="myDiv"></div>
-     <button onclick="myFunction()">Try it</button> //button to test requeststring in alert box
-
+     
 
 
 <script>
@@ -141,31 +139,7 @@ document.addEventListener('click', function(e) {
 
 </script>
 
-<script>
-function createCORSRequest(method, url, complete){
-  var xhr = new XMLHttpRequest();
-  if ("withCredentials" in xhr){
-    xhr.open(method, url, true);
-  } else if (typeof XDomainRequest != "undefined"){
-    xhr = new XDomainRequest();
-    xhr.open(method, url);
-  } else {
-    xhr = null;
-  }
-  xhr.onreadystatechange = function(){
-      if(xhr.readyState == 4) {
-          complete(xhr);
-      }
-  };
-  xhr.send();
-  return xhr;
-}
 
-var url = 'https://api.hsforms.com/submissions/v3/integration/submit/6282099/1ba21777-48f7-41f7-8730-3b4854f58f78';
-createCORSRequest('GET', url, function(){
-    document.getElementById("myDiv").innerHTML=xhr.responseText;
-});
-</script>
 
 
 <!-- Start of HubSpot Embed Code -->
