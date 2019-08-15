@@ -147,12 +147,16 @@ var xhr = new XMLHttpRequest();
 xhr.onreadystatechange = function() {
 if (xhr.readyState === 4) {
   callback(xhr.response);
+
+  var data = xhr.responseText;
+  var jsonResponse = JSON.parse(data);
+  console.log(jsonResponse["Data"]);
 }
 }
 
 xhr.open('GET', url, true);
 xhr.send('');
-console.log(xhr)
+
 }
 </script>
 
