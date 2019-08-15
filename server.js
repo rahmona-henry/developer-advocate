@@ -35,7 +35,7 @@ app.post('/', function (req, res) {
   const submissionTime = new Date().getTime(); //Get time in milliseconds to record submission
   console.log(req.body)
 
-  app.post('/bad-request', (req, res) => {
+  app.post('/', (req, res) => {
               res.status(400).send({message : "You are missing vital credentials"})
       });
 
