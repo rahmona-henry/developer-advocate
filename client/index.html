@@ -20,7 +20,7 @@
           <input type="hidden" id="pageURL" name="pageURL" value="">
           <br><br>
 
-          <input type="submit" value="Submit">
+          <input type="submit" id="submit" value="Submit">
 
 <script>
   function getCookie(cname) {
@@ -57,12 +57,19 @@
        return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
    }
 
-
    var _hsq = window._hsq = window._hsq || [];
    _hsq.push(["identify",{
        email: getParameterByName("email"),
        favorite_color: 'orange'
    }]);
+
+   document.getElementById("submit").onclick = function('000007233510') {
+    _hsq.push(["trackEvent", {
+        id: "Clicked Submit button",
+        value: 20.5
+    }]);
+};
+
 
   </script>
 
