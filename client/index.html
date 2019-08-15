@@ -114,17 +114,32 @@ document.addEventListener('click', function(e) {
        return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
    }
 
-   var _hsq = window._hsq = window._hsq || [];
-   _hsq.push(["identify",{
-        email: getParameterByName("email")
-   }]);
+   // var _hsq = window._hsq = window._hsq || [];
+   // _hsq.push(["identify",{
+   //      email: getParameterByName("email")
+   // }]);
 
-   document.getElementById("submit").onclick = function() {
+//    document.getElementById("submit").onclick = function() {
+//     _hsq.push(["trackEvent", {
+//         id: "000007233508",
+//         value: 0,
+//     }]);
+// };
+<script>
+  var _hsq = window._hsq = window._hsq || [];
+  var button = document.getElementById("submit");
+
+  function fireEvent(){
     _hsq.push(["trackEvent", {
-        id: "000007233508",
-        value: 0,
+      id: "000007235521"
     }]);
-};
+    alert("event recorded! party!");
+  }
+
+  button.addEventListener("click", fireEvent, false);
+
+</script>
+
 </script>
 <!-- Start of HubSpot Embed Code -->
 <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/6282099.js"></script>
