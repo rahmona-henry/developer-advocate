@@ -52,23 +52,23 @@
     document.getElementById("pageURL").value=pageURL;
    console.log(pageURL);
 
-   function getParameterByName(name) {
-       var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
-       return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
-   }
-
-   var _hsq = window._hsq = window._hsq || [];
-   _hsq.push(["identify",{
-       email: getParameterByName("email"),
-       favorite_color: 'orange'
-   }]);
-
-   document.getElementById("submit").onclick = function(000007233510) {
-    _hsq.push(["trackEvent", {
-        id: "Clicked Submit button",
-        value: 20.5
-    }]);
-};
+//    function getParameterByName(name) {
+//        var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+//        return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+//    }
+//
+//    var _hsq = window._hsq = window._hsq || [];
+//    _hsq.push(["identify",{
+//        email: getParameterByName("email"),
+//        favorite_color: 'orange'
+//    }]);
+//
+//    document.getElementById("submit").onclick = function('000007233510') {
+//     _hsq.push(["trackEvent", {
+//         id: "Clicked Submit button",
+//         value: 20.5
+//     }]);
+// };
 
 
   </script>
