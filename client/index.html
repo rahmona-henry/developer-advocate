@@ -77,17 +77,17 @@ document.addEventListener('click', function(e) {
    console.log(pageURL);
 </script>
 
-<script>
+<!-- <script>
    function getParameterByName(name) {
        var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
        return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
    }
 
    var _hsq = window._hsq = window._hsq || [];
-   // _hsq.push(["identify",{
-   //      email: getParameterByName("email")
-   //
-   // }]);
+   _hsq.push(["identify",{
+        email: getParameterByName("email")
+
+   }]);
 
    document.getElementById("submit").onclick = function() {
     _hsq.push(["trackEvent", {
@@ -97,7 +97,7 @@ document.addEventListener('click', function(e) {
     }]);
 };
 
-</script>
+</script> -->
 
 
 
