@@ -25,19 +25,19 @@ app.use(express.json({
 // })
 
 //POST Requests//
-app.post('/', function (req, res) {
-
-  const firstname = req.body.firstname
-  const lastname = req.body.lastname
-  const email = req.body.email
-  const cookie =req.body.cookie
-  const pageURL =req.body.pageURL
-  const submissionTime = new Date().getTime(); //Get time in milliseconds to record submission
-  console.log(req.body)
-
-  app.post('/', (req, res) => {
-              res.status(400).send({message : "You are missing vital credentials"})
-      });
+// app.post('/', function (req, res) {
+//
+//   const firstname = req.body.firstname
+//   const lastname = req.body.lastname
+//   const email = req.body.email
+//   const cookie =req.body.cookie
+//   const pageURL =req.body.pageURL
+//   const submissionTime = new Date().getTime(); //Get time in milliseconds to record submission
+//   console.log(req.body)
+//
+//   app.post('/', (req, res) => {
+//               res.status(400).send({message : "You are missing vital credentials"})
+//       });
 
 
 
