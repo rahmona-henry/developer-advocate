@@ -62,14 +62,15 @@
    var _hsq = window._hsq = window._hsq || [];
    _hsq.push(["identify",{
        email: getParameterByName("email")
-       console.log(email)
+       console.log(_hsq)
 
    }]);
 
    document.getElementById("submit").onclick = function() {
     _hsq.push(["trackEvent", {
         id: "Clicked Submit button",
-        value: 20.5
+        value: 20.5,
+        email:email
     }]);
 };
 
