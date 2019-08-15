@@ -42,16 +42,18 @@
     document.getElementById("cookie").value=cookie;
     console.log(cookie);
 
-    // var title = document.title;
-    // document.getElementById("title").value=title;
-    // console.log(title)
-    // var pageTitle = document.getElementsByTagName("title")[0];
-    // console.log(pageTitle.innerHTML);
+    var title = document.title;
+    document.getElementById("title").value=title;
+    console.log(title)
+    var pageTitle = document.getElementsByTagName("title")[0];
+    console.log(pageTitle.innerHTML);
 
-   //  var pageURL = window.location.href;
-   //  document.getElementById("pageURL").value=pageURL;
-   // console.log(pageURL);
+    var pageURL = window.location.href;
+    document.getElementById("pageURL").value=pageURL;
+   console.log(pageURL);
+</script>
 
+<script>
    function getParameterByName(name) {
        var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
        return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
@@ -70,8 +72,8 @@
     }]);
 };
 
+</script>
 
-  </script>
 
 
 
