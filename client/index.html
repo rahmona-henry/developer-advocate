@@ -52,6 +52,12 @@
     document.getElementById("pageURL").value=pageURL;
    console.log(pageURL);
 
+   function getParameterByName(name) {
+       var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+       return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+   }
+
+
    var _hsq = window._hsq = window._hsq || [];
    _hsq.push(["identify",{
        email: getParameterByName("email"),
