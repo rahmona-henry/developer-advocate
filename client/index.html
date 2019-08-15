@@ -2,12 +2,33 @@
   <html>
     <head>
       <title>Developer Advocate</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+
+   <!--Bootstrap & CSS-->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!--Google Fonts-->
+      <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500i,600,600i,700,700i,800,900" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600i,700,900" rel="stylesheet">
+
+
+  <!--Font Awesome-->
+      <link rel="stylesheet" href="css/font-awesome.min.css">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
       </head>
       <body>
-
-        <!-- Start of HubSpot Embed Code -->
-      <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4014783.js"></script>
-      <!-- End of HubSpot Embed Code -->
+          <!--Header-->
+          <header class="header">
+        <div class="container">
+           <div class="row">
+            <div class="col-md-9">
+              <!--Title & Description-->
+             <h1>HubSpot Developer Event Sign Up Form</h1>
+           </div>
+        </div>
+      </div>
+</header>
         <h1>Feedback Form</h1>
 
         <form action="/" method="POST">
@@ -19,6 +40,7 @@
           <br><br>
           <label for="Email">Email Address</label><br>
           <input type="email" name="email" placeholder="Email Address">
+          <br></br>
           <input type="hidden" id="cookie" name="cookie" value="">
           <input type="hidden" id="title" name="title" value="">
           <input type="hidden" id="pageURL" name="pageURL" value="">
@@ -85,5 +107,8 @@ document.addEventListener('click', function(e) {
     }]);
 };
 </script>
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/6282099.js"></script>
+<!-- End of HubSpot Embed Code -->
   </body>
   </html>
