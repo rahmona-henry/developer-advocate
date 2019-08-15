@@ -31,6 +31,7 @@ app.post('/', function (req, res) {
   const lastname = req.body.lastname
   const email = req.body.email
   const cookie =req.body.cookie
+  const pageURL =req.body.pageURL
 
   console.log(req.body)
 
@@ -61,7 +62,7 @@ app.post('/', function (req, res) {
     ],
     "context": {
       "hutk":  cookie, // include this parameter and set it to the hubspotutk cookie value to enable cookie tracking on your submission
-      "pageUri": "https://devadvocate.herokuapp.com",
+      "pageUri": pageURL,
       "pageName": "Developer Advocate"
     },
 
