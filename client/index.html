@@ -139,8 +139,20 @@ document.addEventListener('click', function(e) {
 </script>
 
 <script>
-     var body = XMLHttpRequest.response;
-     console.log(body)
+var url = 'https://devadvocate.herokuapp.com'; //A local page
+
+function load(url, callback) {
+var xhr = new XMLHttpRequest();
+
+xhr.onreadystatechange = function() {
+if (xhr.readyState === 4) {
+  callback(xhr.response);
+}
+}
+
+xhr.open('GET', url, true);
+xhr.send('');
+}
 </script>
 
 
