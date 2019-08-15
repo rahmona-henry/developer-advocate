@@ -53,6 +53,10 @@ app.post('/', function (req, res) {
       {
         "name": "firstname",
         "value": firstname
+      },
+      {
+        "name": "lastname",
+        "value": lastname
       }
     ],
     "context": {
