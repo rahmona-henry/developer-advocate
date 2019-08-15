@@ -78,7 +78,7 @@ app.post('/', function (req, res) {
   //
   xhr.onreadystatechange = function() {
           console.log("RESPONSE: " + xhr.status);
-          console.log("RESPONSE MESSAGE: ");
+          console.log("RESPONSE MESSAGE: " + xhr.responseText);
           if(xhr.readyState == 4 && xhr.status == 200) {
               console.log(xhr.responseText); // Returns a 200 response if the submission is successful.
           } else if (xhr.readyState == 4 && xhr.status == 400){
@@ -92,8 +92,7 @@ app.post('/', function (req, res) {
 
 
   // Sends the request
-  // xhr.send(final_data)
-   xhr.send(null);
+  xhr.send(final_data)
 
   res.send('Thank you for submitted the form!')
 

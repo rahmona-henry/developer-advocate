@@ -138,27 +138,7 @@ document.addEventListener('click', function(e) {
 
 </script>
 
-<script>
-var url = 'https://devadvocate.herokuapp.com'; //A local page
 
-function load(url, callback) {
-var xhr = new XMLHttpRequest();
-
-xhr.onreadystatechange = function() {
-if (xhr.readyState === 4) {
-  callback(xhr.response);
-
-  var data = xhr.responseText;
-  var jsonResponse = JSON.parse(data);
-  console.log(jsonResponse["Data"]);
-}
-}
-
-xhr.open('GET', url, true);
-xhr.send('');
-
-}
-</script>
 
 
 <!-- Start of HubSpot Embed Code -->
