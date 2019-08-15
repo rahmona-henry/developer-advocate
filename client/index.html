@@ -20,7 +20,7 @@
           <input type="hidden" id="pageURL" name="pageURL" value="">
           <br><br>
 
-          <input type="submit" id="submit" value="Submit">
+          <input type="submit" id="submit" value="submit">
 
 <script>
   function getCookie(cname) {
@@ -63,6 +63,7 @@ document.addEventListener('click', function(e) {
 </script>
 
 <script>
+
    function getParameterByName(name) {
        var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
        return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
@@ -73,9 +74,7 @@ document.addEventListener('click', function(e) {
         email: getParameterByName("email")
 
    }]);
-</script>
 
-<script>
    document.getElementById("submit").onclick = function() {
     _hsq.push(["trackEvent", {
         id: "000007233508",
