@@ -60,3 +60,8 @@ body {
   -o-transition: all 1s;
   -webkit-transition: all 1s;
 }
+
+.form-group.required .control-label:after {
+  content:"*";
+  color:red;
+}
