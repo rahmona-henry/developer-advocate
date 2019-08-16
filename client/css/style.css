@@ -73,3 +73,9 @@ a {
 h4 {
   color: #FF8000;
 }
+
+ul li   {
+  font-size: 15px;
+  font-weight: 500;
+  color: #000000;
+}
