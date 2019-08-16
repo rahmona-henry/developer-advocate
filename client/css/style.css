@@ -65,3 +65,7 @@ body {
   -o-transition: all 1s;
   -webkit-transition: all 1s;
 }
+
+a {
+  color:#000000;
+}
