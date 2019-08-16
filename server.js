@@ -35,7 +35,7 @@ app.post('/', function (req, res) {
   const submissionTime = new Date().getTime(); //Get time in milliseconds to record submission
   console.log(req.body)
 
-  
+
 
 
 
@@ -94,7 +94,7 @@ app.post('/', function (req, res) {
 
   // Sends the request
   xhr.send(final_data)
-
+  res.status(400).send('Bad Request')
   res.send('Thank you for submitted the form!')
 
 })
