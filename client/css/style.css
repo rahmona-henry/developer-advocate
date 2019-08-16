@@ -9,7 +9,7 @@ body {
   overflow-x: hidden;
 }
 
-.header h1,h5 {
+.header h1,h5 h6 {
   color: #FF8000;
   font-size: 36px;
 }
