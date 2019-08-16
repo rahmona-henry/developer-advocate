@@ -143,18 +143,21 @@ document.addEventListener('click', function(e) {
 
 function validateForm() {
   var x = document.forms["devForm"]["email"].value;
+  var y = document.forms["devForm"]["firstname"].value;
+    var z = document.forms["devForm"]["lastname"].value;
+
   if (x == "") {
     alert("Email address must be filled out");
     return false;
+}
 
-    var y = document.forms["devForm"]["firstname"].value;
-    if (y == "") {
+else if (y == "") {
       alert("First name must be filled out");
       return false;
 
+}
 
-      var z = document.forms["devForm"]["email"].value;
-      if (z == "") {
+    else (z == "") {
         alert("Email address must be filled out");
         return false;
 

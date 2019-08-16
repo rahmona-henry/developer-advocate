@@ -94,6 +94,10 @@ app.post('/', function (req, res) {
 
   // Sends the request
   xhr.send(final_data)
+  // 400 Bad Request
+   // app.post('/bad-request', (req, res) => {
+   //         res.status(400).send({message : "You are missing vital credentials"})
+   // });
   res.send('Thank you for submitted the form!')
 
 })
