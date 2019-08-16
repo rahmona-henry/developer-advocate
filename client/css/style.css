@@ -9,7 +9,7 @@ body {
   overflow-x: hidden;
 }
 
-.header h1,h5 h6 {
+.header h1, h5  {
   color: #FF8000;
   font-size: 36px;
 }
@@ -78,4 +78,8 @@ ul li   {
   font-size: 15px;
   font-weight: 500;
   color: #000000;
+}
+
+h5  {
+  color: #FF8000;
 }
