@@ -94,7 +94,8 @@
        </section>
 
 
-
+<!--Function to get the cookie from the browser after cookie banner is accepted-->
+<!--Logic to get page URL and title-->
   <script>
     function getCookie(cname) {
           var name = cname + "=";
@@ -132,6 +133,7 @@
      console.log(pageURL);
   </script>
 
+<!--Function to identify a visitor and store the details in the tracker-->
   <script>
      function getParameterByName(name) {
          var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
@@ -144,6 +146,8 @@
      }]);
 
   </script>
+
+  <!--Event listener to fire custom event when the submit button is clicked and assign it to a contact-->
   <script>
     var _hsq = window._hsq = window._hsq || [];
     var button = document.getElementById("submit");
@@ -160,6 +164,7 @@
 
   </script>
 
+<!--Additional Function to validate form data-->
   <script>
   function validateForm() {
 
