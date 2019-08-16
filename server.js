@@ -94,7 +94,6 @@ app.post('/', function (req, res) {
 
   // Sends the request
   xhr.send(final_data)
-  res.status(400).send('Bad Request')
   res.send('Thank you for submitted the form!')
 
 })
