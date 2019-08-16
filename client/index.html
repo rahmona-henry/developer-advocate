@@ -70,7 +70,7 @@
          <div class="container">
            <div class="row">
              <div class="col-md-6">
-          <form name="devForm" action="/" method="POST">
+          <form name="devForm" onsubmit="return validateForm()"action="/" method="POST">
             <div class="form-group">
             <b><label for="FirstName">First Name *</label></b>
             <input type="text" class="form-control" name="firstname" placeholder="First Name" required="true">
