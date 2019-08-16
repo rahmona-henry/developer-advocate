@@ -47,7 +47,7 @@
        <div class="container">
          <div class="row">
            <div class="col-md-6">
-        <form action="/" method="POST">
+        <form name="devForm" action="/" onsubmit="returnvalidateForm()" method="POST">
           <div class="form-group">
           <b><label for="FirstName">First Name</label></b>
           <input type="text" class="form-control" name="firstname" placeholder="First Name">
@@ -138,7 +138,18 @@ document.addEventListener('click', function(e) {
 
 </script>
 
+<script>
 
+
+function validateForm() {
+  var x = document.forms["devForm"]["email"].value;
+  if (x == "") {
+    alert("Email address must be filled out");
+    return false;
+  }
+}
+
+</script>
 
 
 <!-- Start of HubSpot Embed Code -->
