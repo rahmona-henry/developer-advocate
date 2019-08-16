@@ -56,7 +56,7 @@
           <b><label for="LastName">Last Name</label></b>
           <input type="text" class="form-control" name="lastname" placeholder="Last Name">
            </div>
-          <div class="form-group">
+          <div class="form-group.required">
           <b><label for="Email">Email Address</label></b>
           <input type="email" class="form-control" name="email" placeholder="Email Address">
          </div>
@@ -146,21 +146,21 @@ function validateForm() {
     var z = document.forms["devForm"]["lastname"].value;
 
   if (x == "") {
-    alert("Email address must be filled out");
+    alert("Email address must be entered before submitting the form.Thank You!");
     return false;
 }
 
 else if (y == "") {
-      alert("First name must be filled out");
+      alert("First name must be entered before submitting the form.Thank You!");
       return false;
 
 }
 
     else (z == "")
-        alert("Email address must be filled out");
+        alert("Last name entered before submitting the form.Thank You!");
         return false;
 
-  
+
 }
 
 </script>
