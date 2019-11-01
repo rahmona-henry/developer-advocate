@@ -73,20 +73,20 @@
 
     // Sets the value of the 'Content-Type' HTTP request headers to 'application/json'
     xhr.setRequestHeader('Content-Type', 'application/json');
-    //
-    // xhr.onreadystatechange = function() {
-    //         // console.log("RESPONSE: " + xhr.status);
-    //         // console.log("RESPONSE MESSAGE: " + xhr.responseText);
-    //         if(xhr.readyState == 4 && xhr.status == 200) {
-    //             // console.log(xhr.responseText); // Returns a 200 response if the submission is successful.
-    //         } else if (t){
-    //             // console.log(xhr.responseText); // Returns a 400 error the submission is rejected.
-    //         } else if (xhr.readyState == 4 && xhr.status == 403){
-    //             // console.log(xhr.responseText); // Returns a 403 error if the portal isn't allowed to post submissions.
-    //         } else if (xhr.readyState == 4 && xhr.status == 404){
-    //             // console.log(xhr.responseText); //Returns a 404 error if the formGuid isn't found
-    //         }
-    //        }
+
+    xhr.onreadystatechange = function() {
+            // console.log("RESPONSE: " + xhr.status);
+            // console.log("RESPONSE MESSAGE: " + xhr.responseText);
+            if(xhr.readyState == 4 && xhr.status == 200) {
+                console.log(xhr.responseText); // Returns a 200 response if the submission is successful.
+            } else if (xhr.readyState == 4 && xhr.status == 400){
+                // console.log(xhr.responseText); // Returns a 400 error the submission is rejected.
+            } else if (xhr.readyState == 4 && xhr.status == 403){
+                // console.log(xhr.responseText); // Returns a 403 error if the portal isn't allowed to post submissions.
+            } else if (xhr.readyState == 4 && xhr.status == 404){
+                // console.log(xhr.responseText); //Returns a 404 error if the formGuid isn't found
+            }
+           }
 
     // Sends the request
     xhr.send(final_data)
