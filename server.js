@@ -94,7 +94,7 @@
      // app.post('/bad-request', (req, res) => {
      //         res.status(400).send({message : "You are missing vital credentials"})
      // });
-    res.send('Thank you for submitted the form!')
+    res.send('Thanks for submitting the form!')
 
   })
   // const port = process.env.PORT || 4000
